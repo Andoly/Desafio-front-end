@@ -9,7 +9,7 @@ export type CardProps = {
 }
 
 const ProductMainCard = ({ name, price, image }: CardProps) => (
-  <S.Wrapper>
+  <S.Wrapper aria-label="card wrapper">
     <S.CardGame>
       <S.Image src={image} alt={name} />
     </S.CardGame>

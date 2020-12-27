@@ -11,7 +11,7 @@ export type CardProps = {
 }
 
 const ProductSideCard = ({ name, price, image }: CardProps) => (
-  <S.Wrapper>
+  <S.Wrapper aria-label="side card wrapper">
     <S.CardGame>
       <S.Image src={image} alt={name} />
     </S.CardGame>
