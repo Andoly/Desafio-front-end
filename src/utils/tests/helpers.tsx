@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ThemeProvider } from 'styled-components'
 import { render, RenderResult } from '@testing-library/react'
 
