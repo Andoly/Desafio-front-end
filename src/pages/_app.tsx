@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import theme from 'styles/theme'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { storeWrapper } from 'redux-local'
 
 import GlobalStyles from 'styles/global'
 
@@ -24,4 +25,4 @@ function App({ Component, pageProps }: AppProps) {
   )
 }
 
-export default App
+export default storeWrapper.withRedux(App)

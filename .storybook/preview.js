@@ -1,31 +1,18 @@
 import { addDecorator } from '@storybook/react'
 import { withNextRouter } from 'storybook-addon-next-router'
-import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '../src/styles/global'
-import theme from '../src/styles/theme'
+import { ThemeProvider } from 'styled-components'
+import theme from 'styles/theme'
+import { storeWrapper } from 'redux-local'
 
 addDecorator(withNextRouter())
+addDecorator(storeWrapper.withRedux())
 
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles removeBg />
+      <GlobalStyles />
       <Story />
     </ThemeProvider>
   )
 ]
-export const parameters = {
-  backgrounds: {
-    default: 'won-light',
-    values: [
-      {
-        name: 'won-light',
-        value: theme.colors.white
-      },
-      {
-        name: 'won-dark',
-        value: theme.colors.mainBg
-      }
-    ]
-  }
-}
