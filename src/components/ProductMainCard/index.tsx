@@ -39,7 +39,7 @@ const ProductMainCard = ({ id, name, price, score, image }: CardProps) => {
   return (
     <S.Wrapper aria-label="card wrapper">
       <S.CardGame>
-        <S.Image src={image} alt={name} />
+        <S.Image src={`/assets/${image}`} alt={name} />
       </S.CardGame>
       <S.Card>
         <S.CardInfo>

@@ -9,7 +9,9 @@ export const Wrapper = styled.button`
     font-family: ${theme.font.family};
     font-weight: bold;
     border-radius: 0.3rem;
-    width: 23.8rem;
+    width: calc(100% + 20px);
+    position: relative;
+    right: 10px;
     height: 5rem;
     border: 0.1rem solid transparent;
     &:hover {

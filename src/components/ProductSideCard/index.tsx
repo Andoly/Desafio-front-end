@@ -25,7 +25,7 @@ const ProductSideCard = ({ name, price, image, index }: SideCardProps) => {
   return (
     <S.Wrapper aria-label="side card wrapper">
       <S.CardGame>
-        <S.Image src={image} alt={name} />
+        <S.Image src={`/assets/${image}`} alt={name} />
       </S.CardGame>
       <S.CardInfo>
         <S.Icon>
