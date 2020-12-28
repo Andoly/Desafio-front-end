@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import ProductSideCard, { CardProps } from '.'
+import ProductSideCard, { SideCardProps } from '.'
 
 export default {
   title: 'ProductSideCard',
@@ -13,4 +13,6 @@ export default {
   }
 } as Meta
 
-export const Default: Story<CardProps> = (args) => <ProductSideCard {...args} />
+export const Default: Story<SideCardProps> = (args) => (
+  <ProductSideCard {...args} />
+)

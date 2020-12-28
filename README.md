@@ -6,6 +6,7 @@ Nesse projeto usei as seguintes tecnologias:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
+- [Redux](https://redux.js.org/)
 - [Styled Components](https://styled-components.com/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
